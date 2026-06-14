@@ -3,39 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ROCK PAPER SCISSORS GAME</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Rock Paper Scissors Game by Mohit">
+    <title>Rock Paper Scissors Game</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <p class="creator"> Designed & Developed by Mohit</p>
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="./images/rock.jpeg">
+
+    <div class="container">
+
+        <h1>🎮 Rock Paper Scissors</h1>
+        <p class="creator">Designed & Developed by Mohit</p>
+
+        <div class="choices">
+
+            <div class="choice" id="rock">
+                <img src="./images/rock.jpeg" alt="Rock">
+            </div>
+
+            <div class="choice" id="paper">
+                <img src="./images/paper.png" alt="Paper">
+            </div>
+
+            <div class="choice" id="scissors">
+                <img src="./images/scissors.png" alt="Scissors">
+            </div>
+
         </div>
-        <div class="choice" id="paper">
-            <img src="./images/paper.png">
+
+        <div class="score-board">
+
+            <div class="score">
+                <p id="user-score">0</p>
+                <p>You</p>
+            </div>
+
+            <div class="score">
+                <p id="computer-score">0</p>
+                <p>Computer</p>
+            </div>
+
         </div>
-        <div class="choice" id="scissors">
-            <img src="./images/scissors.png">
+
+        <div class="msg-container">
+            <p id="msg">👆 Choose Your Move</p>
         </div>
 
     </div>
 
-    <div class="score-board">
-        <div class="score">
-            <p id="user-score">0</p>
-            <p>You</p>
-        </div>
-        <div class="score">
-            <p id="computer-score">0</p>
-            <p>Computer</p>
-        </div>
-    </div>
-    
-    <div class="msg-container">
-        <p id="msg">Play your move</p>
-    </div>
     <script src="app.js"></script>
+
 </body>
 </html>
